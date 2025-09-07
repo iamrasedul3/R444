@@ -9,21 +9,21 @@
 <title>Countdown Redirect</title>
 <style>
 #countdown {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 8px solid #007BFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #007BFF;
-  margin: 40px auto;
-  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #007BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #007BFF;
+  margin: 40px auto;
+  position: relative;
 }
 #countdown span {
-  position: absolute;
+  position: absolute;
 }
 </style>
 </head>
@@ -33,18 +33,18 @@
 
 <script>
 (function(){
-  var seconds = 10;
-  var timerEl = document.getElementById('timer');
-  var redirectUrl = "https://data156.click/fe68ce58e525f9f40ea5/1e8e820dc5/?placementName=default";
-  var interval = setInterval(function(){
-    seconds--;
-    if(seconds <= 0){
-      clearInterval(interval);
-      window.location.href = redirectUrl;
-    } else {
-      timerEl.textContent = seconds;
-    }
-  },1000);
+  var seconds = 10;
+  var timerEl = document.getElementById('timer');
+  var redirectUrl = "https://data156.click/fe68ce58e525f9f40ea5/1e8e820dc5/?placementName=default";
+  var interval = setInterval(function(){
+    seconds--;
+    if(seconds <= 0){
+      clearInterval(interval);
+      window.location.href = redirectUrl;
+    } else {
+      timerEl.textContent = seconds;
+    }
+  },1000);
 })();
 </script>
 </body>
